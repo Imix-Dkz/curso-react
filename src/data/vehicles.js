@@ -20,7 +20,8 @@ const vehicles = [
     {
       name: "Plane",
       description: "Tickets are expensive",
-      image: "https://www.rd.com/wp-content/uploads/2020/01/GettyImages-1131335393-e1650030686687.jpg",
+      /*image: "https://www.rd.com/wp-content/uploads/2020/01/GettyImages-1131335393-e1650030686687.jpg",*/
+      image : "https://img.freepik.com/vector-gratis/avion-pasajeros-aislado_1284-41822.jpg?w=2000",
     },
     {
       name: "Ship",
@@ -36,8 +37,8 @@ const vehicles = [
     {
       name: "Tejón",
       description: "Rawr AAAAAAAAA",
-      image:
-        "https://img.freepik.com/premium-photo/futuristic-scifi-battle-spaceship-hover-ocean-alien-planet-digital-painting_379823-2914.jpg?w=2000",
+      //image:"https://img.freepik.com/premium-photo/futuristic-scifi-battle-spaceship-hover-ocean-alien-planet-digital-painting_379823-2914.jpg?w=2000",
+      image: "https://img.freepik.com/vector-gratis/ilustracion-zarigueya-dibujos-animados-dibujados-mano_52683-115436.jpg?w=2000",
     },
   ];
   
