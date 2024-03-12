@@ -1,9 +1,11 @@
 import "./App.css";
 //Si se crea un componente("CARD"), antes de integrarlo en el proyecto hay que importarlo
 import Card from "./componets/Card";
+import ShowHide from "./componets/ShowHide";
 import vehicles from "./data/vehicles";
 
 function App(){
+  //Aqui se está creando un arreglo de datos que está por ser invocado más adelante...
   const vehiclesList = vehicles.map( v => {
     return <Card title={v.name} description={v.description} />
   })
@@ -18,9 +20,11 @@ function App(){
           <Card/> 
         */}
 
+        {/*Así se invoca el arreglo de datos creado previamente...*/}
         {vehiclesList}
-
       </div>
+
+      {/* <ShowHide/>  //Se elimina xq sólo se uso para lo ejercicios de "ShowHide.jsx"*/}
     </div>
   );
   

@@ -1,5 +1,5 @@
 const vehicles = [
-    {
+    /* {
       name: "Car",
       description: "has four wheels",
       image:
@@ -10,7 +10,7 @@ const vehicles = [
       description: "goes fast",
       image:
         "https://content2.kawasaki.com/ContentStorage/KMC/Products/8798/8c85b065-f4e9-4ee6-966f-2b7993daff08.png?w=767",
-    },
+    },*/
     {
       name: "Bycicle",
       description: "it's good for the environment",
@@ -30,6 +30,12 @@ const vehicles = [
     {
       name: "Spaceship",
       description: "Goes to space",
+      image:
+        "https://img.freepik.com/premium-photo/futuristic-scifi-battle-spaceship-hover-ocean-alien-planet-digital-painting_379823-2914.jpg?w=2000",
+    },
+    {
+      name: "Tejón",
+      description: "Rawr AAAAAAAAA",
       image:
         "https://img.freepik.com/premium-photo/futuristic-scifi-battle-spaceship-hover-ocean-alien-planet-digital-painting_379823-2914.jpg?w=2000",
     },

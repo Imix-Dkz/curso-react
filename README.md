@@ -14,12 +14,17 @@ Por lo general, un componente parte de 2 archivos principales:
 Con los que se pueden ir generando modulos de código o funcionalidades que permitan la operabilidad del sitio web...
 
 Cuando se crea un componente y se requiere gestionar propiedades en el, al mandarlos por una función se usa la convención "props", por ejemplo...
-    function Card(**props**){
-    return ( <ELEMENTO clasName="Card">
-       <h2>Titulo de la Tarjeta</h2>
-       <p>Descripción de la Tarjeta</p>
-    </ELEMENTO>);
-    }
+      function Card(**props**){
+      return ( <ELEMENTO clasName="Card">
+         <h2>Titulo de la Tarjeta</h2>
+         <p>Descripción de la Tarjeta</p>
+      </ELEMENTO>);
+      }
+
+En script de "App.jsx", se puede ver el uso de componentes dinamicos desde un arreglo de datos...
+      const vehiclesList = vehicles.map( v => {
+          return <Card title={v.name} description={v.description} />
+      })
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 Currently, two official plugins are available:
