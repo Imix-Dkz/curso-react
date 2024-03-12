@@ -26,6 +26,11 @@ En script de "App.jsx", se puede ver el uso de componentes dinamicos desde un ar
           return <Card title={v.name} description={v.description} />
       })
 
+En el script "ShowHide.jsx" se puede ver el uso de eventos y control de estados
+
+Para el control de rutas del proyecto y evitar proceso de recarga de pagina al momento de invocar componentes, se usará la libreria de "reactrouter.com", se instala de la siguiente manera...
+    npm install react-router-dom
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh

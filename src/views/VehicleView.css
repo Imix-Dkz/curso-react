@@ -1,0 +1,10 @@
+.VehicleView{
+    max-width: 90%;
+    margin: auto; /*centra margenes*/
+    text-align: center;
+}
+.VehicleView img{
+    display: block; /*comportamiento controlado de la imagen*/
+    max-width: 95%; /*la imagen no llegará al 100% del contenedor*/
+
+}
