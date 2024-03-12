@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+//Si se crea un componente("CARD"), antes de integrarlo en el proyecto hay que importarlo
+import Card from "./componets/Card";
+import vehicles from "./data/vehicles";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App(){
+  const vehiclesList = vehicles.map( v => {
+    return <Card title={v.name} description={v.description} />
+  })
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <h1>Hola React</h1>
+      <div className="container">
+        {/* //Ejemplo de pase de datos a un componente... 
+          <Card title="Titulo 1" description="Descripcion"/>
+          <Card/>
+          <Card title="Titulo 3" description="Descripcion 4"/>
+          <Card/> 
+        */}
+
+        {vehiclesList}
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
+  
 }
 
-export default App
+export default App;
