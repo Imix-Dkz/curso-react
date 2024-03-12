@@ -24,9 +24,14 @@ a:hover {
 
 body {
   margin: 0;
+<<<<<<< HEAD
   /* //Se retiran estas opciones de estilos
   display: flex;
   place-items: center;*/
+=======
+  display: flex;
+  place-items: center;
+>>>>>>> 3a890d1cd082763c4722055e4c35be19b788cc99
   min-width: 320px;
   min-height: 100vh;
 }
