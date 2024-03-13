@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-<<<<<<< HEAD
 //Para usara ReactRouter hay que hacer su importación y como se harán rutas dinamicas, tambien se traerá el arreglo de datos...
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import vehicles from './data/vehicles.js';
@@ -37,11 +36,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> ... Cuando se usa ReactRouter, la invocación de la App Se hace de forma diferente...*/}
     <RouterProvider router={router}/>
-=======
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
->>>>>>> 3a890d1cd082763c4722055e4c35be19b788cc99
   </React.StrictMode>,
 )
