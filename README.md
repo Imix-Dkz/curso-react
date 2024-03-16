@@ -14,22 +14,22 @@ Por lo general, un componente parte de 2 archivos principales:
 Con los que se pueden ir generando modulos de código o funcionalidades que permitan la operabilidad del sitio web...
 
 Cuando se crea un componente y se requiere gestionar propiedades en el, al mandarlos por una función se usa la convención "props", por ejemplo...
-      function Card(**props**){
-      return ( <ELEMENTO clasName="Card">
-         <h2>Titulo de la Tarjeta</h2>
-         <p>Descripción de la Tarjeta</p>
-      </ELEMENTO>);
-      }
+>     function Card(**props**){
+>      return ( <ELEMENTO clasName="Card">
+>       <h2>Titulo de la Tarjeta</h2>
+>       <p>Descripción de la Tarjeta</p>
+>      </ELEMENTO>);
+>     }
 
 En script de "App.jsx", se puede ver el uso de componentes dinamicos desde un arreglo de datos...
-      const vehiclesList = vehicles.map( v => {
-          return <Card title={v.name} description={v.description} />
-      })
+>     const vehiclesList = vehicles.map( v => {
+>      return <Card title={v.name} description={v.description} />
+>     });
 
 En el script "ShowHide.jsx" se puede ver el uso de eventos y control de estados
 
 Para el control de rutas del proyecto y evitar proceso de recarga de pagina al momento de invocar componentes, se usará la libreria de "reactrouter.com", se instala de la siguiente manera...
-    npm install react-router-dom
+>     npm install react-router-dom
 
 Se añaden ejemplos de enrutamiento dinamico en el script "main.jsx"
 Se incluyen redirección de página principal y se corrigen algunos links de imagenes que se habian roto...
